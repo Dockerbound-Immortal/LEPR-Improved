@@ -19,7 +19,18 @@ The server will appear via the url: [http://localhost:8080](http://localhost:808
 # Constructed Compose File
 LEPP development stack.
 
-This development stack
+This development stack.
+
+# .env
+
+You will need to set up a .env file in the root directory for the container to run:
+
+- POSTGRES_DATABASE=app_db
+- POSTGRES_USER=username
+- POSTGRES_PASSWORD=password
+- POSTGRES_ROOT_PASSWORD=rootPassword
+
+The name of the db must remain as `app_db` for the container to work.
 
 ## Usage
 
