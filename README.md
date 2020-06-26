@@ -57,6 +57,18 @@ Three new available have been added that handle Composer, NPM, and Artisan comma
 - `docker-compose run --rm npm run dev`
 - `docker-compose run --rm artisan migrate` 
 
+# Migrating Tables
+
+To use artisan commands such as migrations, `exec` into the `php` container and run the command.
+
+Note, this container does not contain bash, commands should be run as follows:
+
+<code>
+    <pre>
+    docker exec -ti php php artisan serve
+    </pre>
+</code>
+
 Containers created and their ports (if used) are as follows:
 
 - **nginx** - `:8080`
