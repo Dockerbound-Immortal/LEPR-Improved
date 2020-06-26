@@ -65,7 +65,7 @@ Note, this container does not contain bash, commands should be run as follows:
 
 <code>
     <pre>
-    docker exec -ti php php artisan serve
+    docker exec -ti php php artisan migrate
     </pre>
 </code>
 
